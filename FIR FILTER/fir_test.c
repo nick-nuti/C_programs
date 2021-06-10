@@ -46,7 +46,7 @@ int main () {
 								{-1.0033, -0.8877, -0.8463}};
 
 	int32_t input[26][7] = {0};
-	int32_t layer1[5] = {32768,0,0,0,0}; // **needed to have "1" (translated decimal to 16 bit fixed-point "1" value) or compiler would not create array
+	int32_t layer1[5] = {32768,0,0,0,0}; // **the "one" here is the biasing neuron
 	int32_t theta_1[7][4] = {0};
 	int32_t theta_2[5][3] = {0};
 	int32_t output[3] = {0};
