@@ -30,7 +30,7 @@ void fir(post_matrix *fir_input, post_matrix *fir_theta, post_matrix *fir_output
 			//printf("thetas = %d\n", *(theta_address + (j * (fir_theta->columns) + n)));
 		}
 
-		intermittent_matrix[n] = intermittent_matrix[n] / thepower;
+		intermittent_matrix[n] = intermittent_matrix[n] / thepower; // after multiplication, need to divide by 16-bit power because 2 16-bit fixed-point values were multiplied together
 		//printf("intermittent_matrix[n] = %d\n", intermittent_matrix[n]);
 	}
 
