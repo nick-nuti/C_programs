@@ -9,3 +9,8 @@ Just basic C programs
         - layer 2 = (layer 1 matrix) MAC (theta 2 matrix) -> apply ReLU
   - fir.c
     - contains the function for calculating matrix MAC, function includes an attribute for including a biasing neuron, and end of the function contains ReLU
+
+2. rpn_calc_postfix.c
+  - Program that uses linkedlists to achieve the functionality of a reverse-polish notation calculator
+
+3. 
